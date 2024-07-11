@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 const apiKey = "6301961cee4942729f9105339241007";
 const APIUrl = "http://api.weatherapi.com/v1/current.json?&q=";
 
@@ -35,3 +37,4 @@ async function checkWeather(city) {
 searchBtn.addEventListener("click", () => {
   checkWeather(searchBox.value);
 });
+})
