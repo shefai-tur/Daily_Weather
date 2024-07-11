@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-const apiKey = "6301961cee4942729f9105339241007";
-const APIUrl = "http://api.weatherapi.com/v1/current.json?&q=";
+// const apiKey = "6301961cee4942729f9105339241007";
+// const APIUrl = "http://api.weatherapi.com/v1/current.json?&q=";
 
-//const apiUrl ="http://api.weatherapi.com/v1/current.json?key=6301961cee4942729f9105339241007&q="
+const apiUrl ="http://api.weatherapi.com/v1/current.json?key=6301961cee4942729f9105339241007&q="
 //const searchBox = "Bangladesh";
 
 const searchBox = document.querySelector(".search input");
@@ -11,8 +11,8 @@ const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 
 async function checkWeather(city) {
-  // const response = await fetch(apiUrl+city)
-  const response = await fetch(APIUrl + city + `&key=${apiKey}`);
+   const response = await fetch(apiUrl+city)
+  //const response = await fetch(APIUrl + city + `&key=${apiKey}`);
   if (response.status == 400) {
     document.querySelector(".error").style.display = "block";
     document.querySelector(".weather").style.display = "none";
