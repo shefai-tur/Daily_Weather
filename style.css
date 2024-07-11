@@ -7,6 +7,7 @@
 body{
     background: #222;
 }
+
 .card{
     width: 90%;
     max-width: 470px;
@@ -66,6 +67,7 @@ body{
  font-size: 45px;
  font-weight: 400;
  margin-top: -10px;
+ margin-bottom: 5px;
 }
 
 .details{
@@ -102,4 +104,8 @@ body{
     font-size: 14px;
     margin-top: 10px;
     display: none;
+}
+
+.text{
+ color: white;
 }
