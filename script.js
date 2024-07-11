@@ -18,8 +18,7 @@ async function checkWeather(city) {
     Math.round(data.current.temp_c) + "°c";
   document.querySelector(".humidity").innerHTML = data.current.humidity + "%";
   document.querySelector(".wind").innerHTML = data.current.wind_kph + "km/h";
-  document.querySelector(".weather-text").innerHTML =
-    data.current.condition.text;
+  document.querySelector(".weather-text").innerHTML =data.current.condition.text;
 
  
   //console.log("test->", data.current.condition.icon);
